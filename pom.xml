@@ -84,7 +84,6 @@
                         </rule>
                     </rules>
                     <excludes>
-                        <exclude>**/ru/netology/domain/*</exclude>
                         <exclude>**/ru/netology/repository/*</exclude>
                     </excludes>
                 </configuration>
