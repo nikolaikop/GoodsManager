@@ -1,12 +1,10 @@
 package ru.netology.domain;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.EqualsAndHashCode;
 
-@AllArgsConstructor
 @Data
-@NoArgsConstructor
+@EqualsAndHashCode(callSuper = true)
 
 public class Smartphone extends Product{
     private String vendor;
@@ -15,7 +13,7 @@ public class Smartphone extends Product{
         super(id, name, price);
         this.vendor = vendor;
     }
-
+    @Override
     public boolean matches(String search) {
         if (super.matches(search)) {
             return true;
