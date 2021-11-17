@@ -1,12 +1,10 @@
 package ru.netology.domain;
 
-import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
-@AllArgsConstructor
 @Data
-@NoArgsConstructor
+@EqualsAndHashCode(callSuper = true)
 
 public class Smartphone extends Product{
     private String vendor;
